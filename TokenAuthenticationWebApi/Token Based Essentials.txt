@@ -1,0 +1,35 @@
+Microsoft.AspNetCore.Authentication.JwtBearer
+Microsoft.AspNetCore.Identity
+Microsoft.AspNetCore.Identity.EntityFrameworkCore
+Microsoft.EntityFrameworkCore.Tools
+Microsoft.EntityFrameworkCore.SqlServer
+
+add-migration "Initial"
+update-database
+
+---------------------------------------------------------
+https://localhost:44304/api/Authentication/Register
+{
+"UserName":"PradeepKumar@gmail.com",
+"Email":"pradeep.kumar@worldfashionexchange.com",
+"Password":"Pk@1234"
+}
+-------------------------------------------------------
+
+https://localhost:44304/api/Authentication/RegisterAdmin
+{
+"UserName":"Akshay@gmail.com",
+"Email":"akshay@worldfashionexchange.com",
+"Password":"Akshay@1234"
+}
+--------------------------------------------------------
+https://localhost:44304/api/Authentication/Login
+{
+"UserName":"Akshay@gmail.com",
+"Password":"Akshay@1234"
+}
+----------------------------------------------------
+https://localhost:44304/WeatherForecast
+
+Bearer Token
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiQWtzaGF5QGdtYWlsLmNvbSIsImp0aSI6ImRhZThiMDM3LTUzYTItNDUzZi1iNjM1LWI2YmI1NDVkYWEyMiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwiZXhwIjoxNjMyMzQ1Mzk4LCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo0NDMwNC8iLCJhdWQiOiJUcnVlIn0.ouknwA_uurAjlx1LMpPX016ppMVnES-1Lna86xJnTYE
